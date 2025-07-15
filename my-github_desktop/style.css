@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', 'Malgun Gothic', Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #222f3e;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #3867d6;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0;
+}
+
+.gallery-grid img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border: 3px solid #222f3e;
+    box-shadow: 0 4px 16px rgba(34,47,62,0.15);
+    background: #fffbe6;
+    font-size: 1.1em;
+    color: #d35400;
+    text-align: center;
+    display: block;
+}
+
+.gallery-grid img:after {
+    content: attr(alt);
+    display: block;
+    padding: 8px 0;
+    color: #d35400;
+    font-weight: bold;
+}
+
+.gallery-grid img:not([src]) {
+    background: #fffbe6;
+    border: 3px dashed #d35400;
+} 
